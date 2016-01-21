@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name :"
+        android:id="@+id/Tv_StudentName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="e-mail :"
+        android:id="@+id/Tv_StudentMail"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/Tv_StudentName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID (optionnal) :"
+        android:id="@+id/Tv_StudentId"
+        android:layout_below="@+id/Tv_StudentMail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_StudentName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Tv_StudentMail"
+        android:layout_toEndOf="@+id/Tv_StudentMail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Enter name here"
+        android:onClick="ClearSelected"
+        android:capitalize="words"
+        android:clickable="false"
+        android:singleLine="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_StudentMail"
+        android:layout_alignTop="@+id/Tv_StudentMail"
+        android:layout_alignLeft="@+id/Et_StudentName"
+        android:layout_alignStart="@+id/Et_StudentName"
+        android:text="Enter e-mail address here"
+        android:onClick="ClearSelected"
+        android:capitalize="words"
+        android:singleLine="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_StudentId"
+        android:layout_alignTop="@+id/Tv_StudentId"
+        android:layout_toRightOf="@+id/Tv_StudentId"
+        android:layout_toEndOf="@+id/Tv_StudentId"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Enter ID here"
+        android:onClick="ClearSelected"
+        android:capitalize="words"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/Bt_Return"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Return" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:id="@+id/Bt_AddStudent"
+        android:layout_below="@+id/Et_StudentId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:onClick="AddStudent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Student"
+        android:id="@+id/Bt_DelStudent"
+        android:layout_alignTop="@+id/Bt_AddStudent"
+        android:layout_toRightOf="@+id/Bt_AddStudent"
+        android:layout_toEndOf="@+id/Bt_AddStudent"
+        android:onClick="DelStudent" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/Bt_ClearEt"
+        android:onClick="ManageStudent"
+        android:layout_below="@+id/Bt_AddStudent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

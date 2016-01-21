@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sp_Select"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="225dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_SelectName"
+        android:text="Enter name here"
+        android:layout_alignBottom="@+id/Sp_Select"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentStart="true"
+        android:onClick="ClearSelected"
+        android:capitalize="sentences"
+        android:singleLine="false"
+        android:visibility="visible"
+        android:editable="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All ?"
+        android:id="@+id/Cb_All"
+        android:layout_alignBottom="@+id/Et_SelectName"
+        android:layout_toRightOf="@+id/Et_SelectName"
+        android:onClick="HideInput" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/Bt_QReturn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="false"
+        android:onClick="Return" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sp_Result"
+        android:layout_marginTop="99dp"
+        android:layout_below="@+id/Sp_Select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query"
+        android:id="@+id/Bt_StartQuery"
+        android:layout_below="@+id/Sp_Select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:onClick="QueryOn" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BBGEII</string>
+    <string name="action_settings">Settings</string>
+    <string name="close_activity">Close</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_joystick">Joystick</string>
+    <string name="action_credits">Credits</string>
+    <string name="title_activity_accelerometre">Accelerometre</string>
+    <string name="title_activity_credits">Credits</string>
+    <string name="title_activity_bdd">BDD</string>
+    <string name="bluetooth">BT</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/Bt_Return"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Return" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student name:"
+        android:id="@+id/Tv_TMStudName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time spent:"
+        android:id="@+id/Tv_TMTimeSpent"
+        android:layout_below="@+id/Tv_TMStudName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_TMStudName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Tv_TMStudName"
+        android:layout_toEndOf="@+id/Tv_TMStudName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="30dp"
+        android:text="Enter name here"
+        android:onClick="ClearSelected"
+        android:capitalize="words" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_TMTime"
+        android:layout_alignTop="@+id/Tv_TMTimeSpent"
+        android:layout_alignLeft="@+id/Et_TMStudName"
+        android:layout_alignStart="@+id/Et_TMStudName"
+        android:text="0"
+        android:onClick="ClearSelected" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="min"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/Et_TMTime"
+        android:layout_toRightOf="@+id/Et_TMTime"
+        android:layout_toEndOf="@+id/Et_TMTime"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mode:"
+        android:id="@+id/Tv_TMSelectMode"
+        android:layout_below="@+id/Et_TMTime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sp_SelectMode"
+        android:layout_alignTop="@+id/Tv_TMSelectMode"
+        android:layout_alignLeft="@+id/Et_TMTime"
+        android:layout_alignStart="@+id/Et_TMTime" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add TimeMode"
+        android:id="@+id/Bt_AddTimeMode"
+        android:layout_below="@+id/Tv_TMSelectMode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:onClick="AddTimeMode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/Bt_Clear"
+        android:layout_below="@+id/Bt_AddTimeMode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:onClick="ManageTimeMode" />
+</RelativeLayout>

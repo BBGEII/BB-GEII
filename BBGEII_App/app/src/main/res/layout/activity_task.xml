@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Task name :"
+        android:id="@+id/Tv_TaskName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student name :"
+        android:id="@+id/Tv_TaskStudName"
+        android:layout_below="@+id/Tv_TaskName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_TaskName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Tv_TaskStudName"
+        android:text="Enter task name here"
+        android:layout_alignRight="@+id/Et_TaskStudName"
+        android:layout_alignEnd="@+id/Et_TaskStudName"
+        android:onClick="ClearSelected" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et_TaskStudName"
+        android:layout_alignTop="@+id/Tv_TaskStudName"
+        android:layout_toRightOf="@+id/Tv_TaskStudName"
+        android:layout_toEndOf="@+id/Tv_TaskStudName"
+        android:text="Enter student&apos;s name here"
+        android:onClick="ClearSelected" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add student&apos;s task"
+        android:id="@+id/Bt_AddTask"
+        android:layout_below="@+id/Et_TaskStudName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@+id/Bt_DelTask"
+        android:layout_alignEnd="@+id/Bt_DelTask" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete student&apos;s task"
+        android:id="@+id/Bt_DelTask"
+        android:layout_below="@+id/Bt_AddTask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/Bt_Clear"
+        android:layout_alignTop="@+id/Bt_AddTask"
+        android:layout_toRightOf="@+id/Bt_AddTask"
+        android:layout_toEndOf="@+id/Bt_AddTask"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:onClick="ManageTask" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/Bt_Return"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Return" />
+</RelativeLayout>
